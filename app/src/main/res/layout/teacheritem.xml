@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:src="@drawable/stuheade2"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp">
+        <LinearLayout
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.beardedhen.androidbootstrap.BootstrapLabel
+                android:id="@+id/role"
+                app:bootstrapBrand="info"
+                android:text="教师"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/stuname"
+                android:textColor="#FF5686FD"
+                android:gravity="center|left"
+                android:textSize="20sp"
+                android:layout_weight="3"
+                android:text="赵子龙"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/stuId"
+            android:textColor="#FF5686FD"
+            android:textSize="15sp"
+            android:gravity="center|left"
+            android:layout_weight="1"
+            android:text="201309030403"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:paddingRight="5dp"
+        android:id="@+id/bltclassname"
+        android:textColor="#FF5686FD"
+        android:textSize="20sp"
+        android:gravity="center|right"
+        android:layout_weight="1"
+        android:text="网络1502班"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

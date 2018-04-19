@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:background="#3B99FF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:textColor="#ffffff"
+            android:text="  正余弦应用"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/upload"
+            android:padding="5dp"
+            android:gravity="right"
+            android:text="上传数据到班级"
+            android:textColor="#ffffff"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/sys"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <com.qqjyb.szxhcl.MyWebView
+            android:visibility="gone"
+            android:id="@+id/showsinsrc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+        <com.qqjyb.szxhcl.DrawView
+
+            android:id="@+id/showsinsrc1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+        <LinearLayout
+            android:background="#3B99FF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:background="#00000000"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:id="@+id/xhyset"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="信号源设置"
+                android:textSize="20sp" />
+            <Button
+                android:background="#00000000"
+                android:textColor="#ffffff"
+                android:id="@+id/apply"
+                android:text="产生"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:background="#00000000"
+                android:textColor="#ffffff"
+                android:id="@+id/srcresult"
+                android:text="结果序列"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:textColor="#ffffff"
+                android:background="#00000000"
+                android:id="@+id/stop"
+                android:text="停止"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:textColor="#ffffff"
+                android:background="#00000000"
+                android:id="@+id/py"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="频域"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/pys"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <com.qqjyb.szxhcl.ShowScreens
+            android:id="@+id/showdes"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <LinearLayout
+            android:layout_gravity="bottom"
+            android:background="#3B99FF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:background="#00000000"
+                android:textColor="#ffffff"
+                android:id="@+id/fxset"
+                android:text="设置"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:background="#00000000"
+                android:textColor="#ffffff"
+                android:id="@+id/rates"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="结果序列"
+                android:textSize="20sp" />
+            <Button
+                android:background="#00000000"
+                android:textColor="#ffffff"
+                android:id="@+id/analyse"
+                android:text="分析"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:background="#00000000"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:id="@+id/sy"
+                android:text="时域"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

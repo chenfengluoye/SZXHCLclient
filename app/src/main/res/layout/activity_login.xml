@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <com.qqjyb.szxhcl.MyReflecImg
+        android:id="@+id/tp"
+        android:layout_weight="1"
+        android:src="@drawable/szxh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/teacherlogin"
+        android:layout_marginTop="25dp"
+        android:layout_margin="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:bootstrapBrand="success"
+        app:bootstrapSize="lg"
+        app:showOutline="false"
+        app:bootstrapText="老师登录"
+        app:roundedCorners="true" />
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/studentlogin"
+        android:layout_marginTop="25dp"
+        android:layout_margin="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:bootstrapBrand="info"
+        app:bootstrapSize="lg"
+        app:showOutline="false"
+        app:bootstrapText="学生登录"
+        app:roundedCorners="true" />
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/touristmodel"
+        android:layout_marginTop="25dp"
+        android:layout_margin="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:bootstrapBrand="warning"
+        app:bootstrapSize="lg"
+        app:showOutline="false"
+        app:bootstrapText="游客模式"
+        app:roundedCorners="true" />
+</LinearLayout>

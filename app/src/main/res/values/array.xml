@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/tools">
+    <string-array name="firtype">
+        <item android:color="#ffffff">低通滤波器</item>
+        <item android:color="#ffffff">高通滤波器</item>
+        <item android:color="#ffffff">带通滤波器</item>
+        <item android:color="#ffffff">带阻滤波器</item>
+    </string-array>
+    <string-array name="wintype">
+        <item android:color="#ffffff">矩形窗</item>
+        <item android:color="#ffffff">图基窗</item>
+        <item android:color="#ffffff">三角窗</item>
+        <item android:color="#ffffff">汉宁窗</item>
+        <item android:color="#ffffff">海明窗</item>
+        <item android:color="#ffffff">布拉克曼窗</item>
+        <item android:color="#ffffff">凯撒窗</item>
+    </string-array>
+
+</resources>

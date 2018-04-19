@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qqjyb.szxhcl">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/main"
+        android:label="数字信号处理"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="数字信号处理" />
+        <activity
+            android:name=".SY1"
+            android:label="正余弦信号的谱分析" />
+        <activity
+            android:name=".BaseVoiceActivity"
+            android:label="语音信号滤波处理"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".RecodSet"
+            android:label="录音设置" />
+        <activity
+            android:name=".FFTApply"
+            android:label="FFT应用" />
+        <activity
+            android:name=".SineApply"
+            android:label="正余弦应用"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".SinSet"
+            android:label="正余弦信号设置" />
+        <activity
+            android:name=".SY2"
+            android:label="数字滤波器设计" />
+        <activity
+            android:name=".SY3"
+            android:label="语音信号滤波处理" />
+        <activity
+            android:name=".SY4"
+            android:label="调制解调系统设计" />
+        <activity
+            android:name=".SY5"
+            android:label="倒频系统的软件实现" />
+        <activity
+            android:name=".FIRDtDesign"
+            android:label="滤波器设计"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FIRLvBoQi"
+            android:label="FIR滤波器设计"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.qqjyb.user.Login"
+            android:label="数字信号处理">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.qqjyb.user.TeacherLogin" android:label="老师登录"/>
+        <activity android:name="com.qqjyb.user.TeacherRegister" android:label="老师注册"/>
+        <activity android:name="com.qqjyb.user.StudentRegister" android:label="学生注册"/>
+        <activity android:name="com.qqjyb.user.StudentLogin" android:label="学生登录"/>
+        <activity android:name="com.qqjyb.user.Choose" android:label="班级管理"/>
+        <activity android:name="com.qqjyb.user.CreateClass" android:label="创建班级"/>
+        <activity android:name="com.qqjyb.user.JoinClass" android:label="加入班级"/>
+        <activity android:name="com.qqjyb.user.MyClass" android:label="我的班级"/>
+        <activity android:name="com.qqjyb.user.ClassMsg" android:label="班级详情"/>
+        <activity android:name="com.qqjyb.user.ScoreList" android:label="实验信息"/>
+        <activity android:name="com.qqjyb.user.Message" android:label="留言"/>
+        <activity android:name="com.qqjyb.user.SY1Result" android:label="实验一结果"/>
+        <activity android:name="com.qqjyb.user.SY2Result" android:label="实验二结果"/>
+        <activity android:name="com.qqjyb.user.SY3Result" android:label="实验三结果"/>
+        <activity android:name="com.qqjyb.user.ChangeMySelf" android:label="修改信息"/>
+        <activity android:name="com.qqjyb.user.ShengYue" android:label="成绩审阅"></activity>
+    </application>
+
+</manifest>

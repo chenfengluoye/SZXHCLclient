@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#2039B8E2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!--<TableRow>-->
+        <!--<TextView-->
+            <!--android:id="@+id/stuname"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="#000fff"-->
+            <!--android:text="陈开举" />-->
+        <!--<TextView-->
+            <!--android:id="@+id/stuId"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_weight="1"-->
+            <!--android:textColor="#000fff"-->
+            <!--android:text="201509030203" />-->
+        <!--<TextView-->
+            <!--android:id="@+id/stuclass"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="#000fff"-->
+            <!--android:text="网络1502班" />-->
+    <!--</TableRow>-->
+    <!--<TableRow-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" >-->
+        <!--<com.beardedhen.androidbootstrap.BootstrapLabel-->
+            <!--app:bootstrapBrand="warning"-->
+            <!--android:text="实验配置"/>-->
+        <!--<View-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_height="1dp"/>-->
+        <!--<com.beardedhen.androidbootstrap.BootstrapLabel-->
+            <!--android:id="@+id/retime"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_gravity="right"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--app:bootstrapBrand="info"-->
+            <!--android:text="2017-12-4 14:25:30"/>-->
+    <!--</TableRow>-->
+    <!--<TableRow>-->
+        <!--<TextView-->
+            <!--android:text="实验名称："-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+        <!--<TextView-->
+            <!--android:id="@+id/syname"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="正余弦信号的谱分析"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+    <!--</TableRow>-->
+
+    <!--<TableRow android:layout_weight="1">-->
+        <!--<TextView android:text="频率序列值:" />-->
+        <!--<TextView-->
+            <!--android:id="@+id/configpl"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="[25][35][48][39][8][9][78][158][42]"/>-->
+    <!--</TableRow>-->
+    <!--<TableRow>-->
+        <!--<TextView android:text="振幅序列值:" />-->
+        <!--<TextView-->
+            <!--android:id="@+id/configzf"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="[25][35][48][39][8][9][78][158][42]"/>-->
+    <!--</TableRow>-->
+    <!--<TableRow>-->
+        <!--<TextView-->
+            <!--android:text="采样频率："/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/stuname"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="548hz"/>-->
+    <!--</TableRow>-->
+    <!--<TableRow>-->
+        <!--<TextView-->
+            <!--android:text="采样点数："/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/stuname"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="1024"/>-->
+    <!--</TableRow>-->
+    <!--<TableRow>-->
+        <!--<com.beardedhen.androidbootstrap.BootstrapLabel-->
+            <!--app:bootstrapBrand="primary"-->
+            <!--app:bootstrapText="实验结果"/>-->
+        <!--<TextView android:text="分数"-->
+            <!--android:gravity="right"-->
+            <!--android:layout_weight="1"/>-->
+        <!--<TextView android:text="80"/>-->
+    <!--</TableRow>-->
+    <!--<TableRow>-->
+        <!--<com.beardedhen.androidbootstrap.BootstrapLabel-->
+            <!--app:bootstrapText="时域结果"-->
+            <!--app:bootstrapBrand="info"/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/stuname"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:maxLines="7"-->
+            <!--android:text="[0#0, 4.158#0.002, 8.135#0.004, 11.756#0.007, 14.863#0.009, 17.321#0.011, 19.021#0.013, 19.89#0.016, 19.89#0.018, 19.021#0.02, 17.321#0.022, 14.863#0.024, 11.756#0.027, 8.135#0.029, 4.158#0.031, 0#0.033, -4.158#0.036, -8.135#0.038, -11.756#0.04, -14.863#0.042, -17.32#0.044, -19.021#0.047, -19.89#0.049, -19.89#0.051, -19.021#0.053, -17.321#0.056, -14.863#0.058, -11.756#0.06, -8.135#0.062, -4.158#0.064, -0#0.067, 4.158#0.069]" />-->
+    <!--</TableRow>-->
+    <!--<TableRow>-->
+        <!--<com.beardedhen.androidbootstrap.BootstrapLabel-->
+            <!--app:bootstrapText="频域结果"-->
+            <!--app:bootstrapBrand="info"/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/stuname"-->
+            <!--android:layout_weight="1"-->
+            <!--android:maxLines="7"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:text="[0#0, 4.158#0.002, 8.135#0.004, 11.756#0.007, 14.863#0.009, 17.321#0.011, 19.021#0.013, 19.89#0.016, 19.89#0.018, 19.021#0.02, 17.321#0.022, 14.863#0.024, 11.756#0.027, 8.135#0.029, 4.158#0.031, 0#0.033, -4.158#0.036, -8.135#0.038, -11.756#0.04, -14.863#0.042, -17.32#0.044, -19.021#0.047, -19.89#0.049, -19.89#0.051, -19.021#0.053, -17.321#0.056, -14.863#0.058, -11.756#0.06, -8.135#0.062, -4.158#0.064, -0#0.067, 4.158#0.069]"/>-->
+    <!--</TableRow>-->
+    <!--<TableRow>-->
+        <!--<com.beardedhen.androidbootstrap.BootstrapLabel-->
+            <!--app:bootstrapBrand="success"-->
+            <!--app:bootstrapText="老师评价"/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/stuname"-->
+            <!--android:text="实验结果正确了实验结果正确了实验结果正确了实验结果正确了实验结果正确了实验结果正确了实验结果正确了实验结果正确了实验结果正确了实验结果正确了实验结果正确了"-->
+            <!--android:layout_weight="1"/>-->
+    <!--</TableRow>-->
+
+</TableLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.qqjyb.user.JoinClass">
+
+    <scut.carson_ho.searchview.SearchView
+        android:layout_margin="10dp"
+        android:id="@+id/seach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:textSizeSearch="5dp"
+        app:textColorSearch="#3F51B5"
+        app:textHintSearch="班级名称或编号"
+        app:searchBlockHeight="100"
+        app:searchBlockColor="#203D88FF" />
+    <com.beardedhen.androidbootstrap.BootstrapProgressBar
+        android:id="@+id/progress"
+        app:animated="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bootstrapBrand="primary"
+        app:striped="true"
+        app:bootstrapSize="lg"
+        app:roundedCorners="true"
+        app:bootstrapProgress="100"/>
+    <ListView
+        android:layout_weight="1"
+        android:id="@+id/classlistview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+</LinearLayout>

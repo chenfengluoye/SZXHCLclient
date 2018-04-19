@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.qqjyb.user.ShengYue">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.beardedhen.androidbootstrap.BootstrapLabel
+            android:layout_marginLeft="10dp"
+            android:id="@+id/schoolorclass"
+            app:bootstrapHeading="h4"
+            app:bootstrapBrand="primary"
+            android:text="分数"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:bootstrapBrand="info"
+            android:id="@+id/score"
+            app:bootstrapSize="lg"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:hint="输入分数"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+    <com.beardedhen.androidbootstrap.BootstrapLabel
+        android:layout_marginLeft="10dp"
+        app:bootstrapHeading="h4"
+        app:bootstrapBrand="primary"
+        android:text="评价"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:layout_margin="10dp"
+        app:bootstrapBrand="info"
+        android:id="@+id/comment"
+        app:bootstrapSize="lg"
+        android:gravity="left"
+        android:layout_weight="1"
+        android:hint="输入评价内容"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:layout_margin="20dp"
+        android:id="@+id/suresy"
+        app:bootstrapBrand="primary"
+        app:bootstrapSize="lg"
+        android:text="确认审阅"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

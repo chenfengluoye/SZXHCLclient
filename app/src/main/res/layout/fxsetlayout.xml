@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fsset">
+    <TextView
+        android:visibility="gone"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:text="分析点数N"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/numb"
+        android:text="on know !!!"
+        android:textColor="#0B6CFF"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:gravity="center"
+        android:textColor="#000000"
+        android:text="算法选择"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="#0B6CFF"
+        android:text="dft或者fft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <AutoCompleteTextView
+        android:id="@+id/method"
+        android:text="fft"
+        android:textColor="#0B6CFF"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:dropDownHeight="45dp"
+        android:completionThreshold="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/savenumb"
+        android:layout_margin="20dp"
+        android:background="#8794AD"
+        android:gravity="center"
+        android:text="保存"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/cacelnumb"
+        android:background="#3A6461"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="取消"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

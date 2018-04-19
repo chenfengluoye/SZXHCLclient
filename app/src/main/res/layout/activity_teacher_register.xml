@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    tools:context="com.qqjyb.user.TeacherLogin">
+
+    <TextView
+
+        android:textColor="#FF4CA5B7"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:text="老师注册"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/admin"
+        android:textColor="#ffffff"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:hint="输入账号"
+        android:textColorHint="#ffffff"
+        android:textSize="20sp"
+        android:background="#FF4CA5B7"
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
+
+    <EditText
+        android:textColor="#ffffff"
+        android:id="@+id/pass"
+        android:inputType="textPassword"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:hint="输入密码"
+        android:textColorHint="#ffffff"
+        android:textSize="20sp"
+        android:background="#FF4CA5B7"
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
+
+    <EditText
+        android:textColor="#ffffff"
+        android:id="@+id/repass"
+        android:inputType="textPassword"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:hint="确认密码"
+        android:textColorHint="#ffffff"
+        android:textSize="20sp"
+        android:background="#FF4CA5B7"
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/regist"
+        android:layout_margin="10dp"
+        android:text="老师注册"
+        app:bootstrapSize="lg"
+        app:roundedCorners="true"
+        app:showOutline="false"
+        app:bootstrapBrand="info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:padding="20dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"/>
+        <com.beardedhen.androidbootstrap.BootstrapLabel
+            android:id="@+id/sturegist"
+            android:layout_margin="10dp"
+            app:bootstrapBrand="info"
+            android:text="学生注册"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.beardedhen.androidbootstrap.BootstrapLabel
+            android:id="@+id/teclogin"
+            android:layout_margin="10dp"
+            app:bootstrapBrand="info"
+            android:text="老师登录"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"/>
+    </LinearLayout>
+
+</LinearLayout>
+

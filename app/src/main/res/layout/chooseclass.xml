@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<TextView
+    android:background="#000fff"
+    android:gravity="center"
+    android:textColor="#ffffff"
+    android:textSize="20sp"
+    android:text="选择上传到班级"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+    <com.mingle.widget.LoadingView
+        android:visibility="gone"
+        android:id="@+id/loading"
+        app:loadingTextAppearance="@color/bootstrap_brand_info"
+        app:loadingText="传输中。。。"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.mingle.widget.LoadingView>
+    <ListView
+        android:id="@+id/choose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+</LinearLayout>

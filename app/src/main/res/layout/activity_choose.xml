@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.qqjyb.user.Choose">
+    <FrameLayout
+        android:layout_weight="10"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <com.qqjyb.szxhcl.MyReflecImg
+            android:src="@drawable/tpjt1"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|top"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/stuheade2" />
+
+                <com.beardedhen.androidbootstrap.BootstrapLabel
+                    android:id="@+id/role"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:bootstrapBrand="primary"
+                    app:bootstrapText="教师" />
+                <com.beardedhen.androidbootstrap.BootstrapLabel
+                    android:id="@+id/update"
+                    android:layout_margin="20dp"
+                    app:bootstrapBrand="success"
+                    android:text="修改资料"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <View
+                android:layout_weight="0.2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"/>
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp">
+
+                <com.beardedhen.androidbootstrap.BootstrapLabel
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的名字"
+                    app:bootstrapBrand="primary"
+                    app:bootstrapHeading="h5" />
+
+                <com.beardedhen.androidbootstrap.BootstrapLabel
+                    android:id="@+id/myname"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:paddingLeft="20dp"
+                    android:textSize="20sp"
+                    app:bootstrapHeading="h5"
+                    app:bootstrapText="陈开举" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp">
+
+                <com.beardedhen.androidbootstrap.BootstrapLabel
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的账号"
+                    app:bootstrapBrand="primary"
+                    app:bootstrapHeading="h5" />
+
+
+                <com.beardedhen.androidbootstrap.BootstrapLabel
+                    android:layout_weight="1"
+                    app:bootstrapHeading="h5"
+                    android:id="@+id/myId"
+                    android:gravity="left"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="2015060302110"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp">
+
+                <com.beardedhen.androidbootstrap.BootstrapLabel
+                    android:id="@+id/sorclable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="班级名称"
+                    app:bootstrapBrand="primary"
+                    app:bootstrapHeading="h5" />
+
+                <com.beardedhen.androidbootstrap.BootstrapLabel
+                    app:bootstrapHeading="h5"
+                    android:gravity="left"
+                    android:layout_weight="1"
+                    android:id="@+id/schoolorclass"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="网络1502"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <View
+                    android:layout_weight="0.4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"/>
+                <com.beardedhen.androidbootstrap.BootstrapLabel
+                    android:layout_weight="1"
+                    app:bootstrapBrand="warning"
+                    android:text="去完善资料-->>>"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="right"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <View
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_weight="8"
+    android:layout_width="match_parent"
+    android:layout_height="0dp">
+    <View
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/createclass"
+        android:layout_margin="10dp"
+        app:bootstrapSize="lg"
+        android:text="创建班级"
+        app:bootstrapBrand="info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/jionclass"
+        app:bootstrapSize="lg"
+        android:layout_margin="10dp"
+        app:bootstrapBrand="info"
+        android:text="加人班级"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/myclass"
+        app:bootstrapSize="lg"
+        android:layout_margin="10dp"
+        app:bootstrapBrand="primary"
+        android:text="我的班级"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/startsy"
+        app:bootstrapSize="lg"
+        android:layout_margin="10dp"
+        app:bootstrapBrand="success"
+        android:text="开始实验"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+</LinearLayout>
+
+</LinearLayout>

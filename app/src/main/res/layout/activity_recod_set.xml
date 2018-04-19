@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="#DEDFF3"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="标准频率(Hz)"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:visibility="gone"
+            android:gravity="center"
+            android:id="@+id/standf"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="#F6EDFF"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="采样频率(Hz)"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_height="wrap_content" />
+
+        <EditText
+
+            android:id="@+id/simplef"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" />
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:text="频率误差"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:gravity="center"
+            android:id="@+id/errorf"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="#DEDFF3"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="采样点数"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:gravity="center"
+            android:id="@+id/fbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="#F6EDFF"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:visibility="gone"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="最大采样点数"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <EditText
+            android:visibility="gone"
+            android:gravity="center"
+            android:id="@+id/maxn"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="#DEDFF3"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:visibility="gone"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="采样时间间隔(s)"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:visibility="gone"
+            android:gravity="center"
+            android:id="@+id/time"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:background="#6B6CBA"
+            android:id="@+id/quxiaochange"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="取消修改"
+            android:textSize="25sp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:background="#1C5564"
+            android:id="@+id/savechange"
+            android:gravity="center"
+            android:text="保存修改"
+            android:textSize="25sp"
+            android:textColor="#ffffff"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

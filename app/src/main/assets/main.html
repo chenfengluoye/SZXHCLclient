@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+		.element {
+			margin: 0 auto;
+			background-color: blue;
+			transition: background-color 1s;
+		}
+		.element:hover {
+			background-color: red;
+		}
+		.diva{
+		    box-sizing: border-box;
+		    box-shadow:0px 0px 30px 15px #3B99FF;
+		}
+	</style>
+    <meta charset="UTF-8">
+    <link href="./basestyle.css" rel="stylesheet" type="text/css">
+    <title>Insert title here</title>
+    <script type="text/javascript">
+    try{
+        var pic=document.getElementById("picture");
+		var i=0;
+		var srclist=new Array();
+		srclist.push("./drawable/tp2.jpg");
+		srclist.push("./drawable/tp4.jpg");
+		srclist.push("./drawable/tp5.jpg");
+		srclist.push("./drawable/tp7.jpg");
+		srclist.push("./drawable/tp8.jpg");
+		srclist.push("./drawable/tp9.jpg");
+		srclist.push("./drawable/tp10.jpg");
+		srclist.push("./drawable/tp11.jpg");
+		var spanlist=document.getElementsByTagName("span");
+		var worker = new Worker("./autochangeimg.js");
+		worker.postMessage("start");
+		worker.onmessage = function(event) {
+		    if(i==-1){
+		        spanlist[7].style.color="#ffffff";
+		    }
+            i=i+1;
+            var pic=document.getElementById("picture");
+            pic.style.backgroundImage ="url("+srclist[i]+")";
+            spanlist[i].style.color="#000000";
+            spanlist[i-1].style.color="#ffffff";
+            if(i==7){
+                i=-1;
+            }
+        }
+    }catch(err){
+        alert(err);
+    }
+        function startsy1(){
+            try{
+                window.mainactivity.startsy1();
+            }catch(err){
+                alert(err);
+            }
+        }
+        function startsy2(){
+            window.mainactivity.startsy2()
+        }
+        function startsy3(){
+            window.mainactivity.startsy3()
+        }
+        function startsy4(){
+            window.mainactivity.startsy4()
+        }
+        function startsy5(){
+            window.mainactivity.startsy5()
+        }
+	</script>
+</head>
+<body style="width: 100%;height: 100%;text-align: center;">
+<div id="picture"  class="diva" style="border:10px solid #3B99FF;position: relative;width: 100%;height: 450px;background-image: url('./drawable/tp11.jpg');">
+    <div style="position: absolute;bottom: 10px;right:10px;"><span style="color: #000000;">●</span><span >●</span><span>●</span><span>●</span><span>●</span><span >●</span><span>●</span><span>●</span></div>
+</div>
+<div style="width: 100%;height: 200px;"></div>
+<div id="sy1" onclick="startsy1()" class="diva" style="border:10px solid #3B99FF;width: 46%;height: 20%;float: left;text-align: center;margin: 2%;">
+    <img alt="" src="./drawable/zyx1.jpg" class="element" style="width: 100%;height: 300px;">
+    <h1>实验一</h1>
+    <label>正余弦信号的谱分析</label>
+</div>
+<div id="sy2" onclick="startsy2()" class="diva" style="border:10px solid #3B99FF;width: 46%;height: 20%;float: left;text-align: center;margin: 2%;">
+    <img alt="" src="./drawable/lbq1.jpg" class="element" style="width: 100%;height: 300px;">
+    <h1>实验二</h1>
+    <label>数字滤波器的设计及实现</label>
+</div>
+<div id="sy3" onclick="startsy3()" class="diva" style="border:10px solid #3B99FF; width: 46%;height: 20%;float: left;text-align: center;margin: 2%;">
+    <img alt="" src="./drawable/syxh1.jpg" class="element" style="width: 100%;height: 300px;">
+    <h1>实验三</h1>
+    <label>语音信号滤波处理</label>
+</div>
+<!--<div id="sy4" onclick="startsy4()" class="diva" style="border:10px solid #3B99FF; width: 46%;height: 20%;float: left;text-align: center;margin: 2%;">-->
+    <!--<img alt="" src="./drawable/tzjtq.jpg" class="element" style="width: 100%;height: 300px;">-->
+    <!--<h1>实验四</h1>-->
+    <!--<label>调制解调系统的设计及实现</label>-->
+<!--</div>-->
+<!--<div onclick="startsy5()" id="sy5" class="diva" style="border:10px solid #3B99FF; width: 46%;height: 20%;float: left;text-align: center;margin: 2%;">-->
+    <!--<img alt="" src="./drawable/dpxt.jpg" class="element" style="width: 100%;height: 300px;">-->
+    <!--<h1>实验五</h1>-->
+    <!--<label>倒频系统的软件实现及应用</label>-->
+<!--</div>-->
+</body>
+</html>

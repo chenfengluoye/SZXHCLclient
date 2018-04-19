@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.qqjyb.user.ClassMsg">
+    <LinearLayout
+        android:padding="10dp"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:background="@drawable/jainzhu"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:id="@+id/classname"
+            android:text="课名：加载中。。。"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/teachername"
+            android:text="老师：加载中。。。"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/classnumber"
+            android:text="学生人数：加载中。。。"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/starttime"
+            android:text="成立时间：加载中。。。"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="2"
+        android:background="@drawable/tpjt1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <ListView
+            android:id="@+id/stuListview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/jion"
+        android:layout_margin="2dp"
+        app:showOutline="true"
+        android:layout_weight="1"
+        app:bootstrapSize="lg"
+        app:roundedCorners="true"
+        app:bootstrapBrand="primary"
+        app:bootstrapText="加入班级"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/quit"
+        android:layout_margin="2dp"
+        app:showOutline="true"
+        android:layout_weight="1"
+        app:bootstrapSize="lg"
+        app:roundedCorners="true"
+        app:bootstrapBrand="primary"
+        app:bootstrapText="退出班级"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/dismiss"
+        android:layout_margin="2dp"
+        app:showOutline="true"
+        android:layout_weight="1"
+        app:bootstrapSize="lg"
+        app:roundedCorners="true"
+        app:bootstrapBrand="primary"
+        app:bootstrapText="解散班级"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+</LinearLayout>

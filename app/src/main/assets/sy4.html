@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+</head>
+<body style="width: 100%;height: 100%;">
+<img src="./drawable/sy7.png" id="picture" alt="实验" style="width: 100%;height: 100%;"/>
+<script type="text/javascript">
+        var images=new Array();
+        getimges();
+        var i=0;
+        var pic=document.getElementById("picture");
+        pic.src=images[i];
+        function getimges(){
+            images=new Array();
+            images.push("./drawable/sy7.png");
+            images.push("./drawable/sy8.png");
+            images.push("./drawable/sy9.png");
+            images.push("./drawable/sy10.png");
+            images.push("./drawable/sy11.png");
+        }
+
+        function goahead(){
+            try{
+                if(i==4){
+                    alert("没有更多了");
+                    return;
+                }
+                i=i+1;
+                pic.src=images[i];
+            }catch(err){
+             alert(err);
+            }
+        }
+        function goback(){
+            try{
+                if(i==0){
+                    alert("没有更多了");
+                    return;
+                }
+                i=i-1;
+                pic.src=images[i];
+            }catch(err){
+                alert(err);
+            }
+        }
+</script>
+</body>
+</html>

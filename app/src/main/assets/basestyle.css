@@ -1,0 +1,15 @@
+label{
+    font-size: 30px;
+}
+h3{
+    font-size: 30px;
+}
+span{
+    font-size: 40px;
+    color: #ffffff;
+    padding: 5px;
+}
+#picture{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}

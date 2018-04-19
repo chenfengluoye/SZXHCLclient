@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+</head>
+<body id="container" style="margin:0">
+<canvas id="canvas" width="1080px;" height="1000px">请更新浏览器版本</canvas><br>
+<script type="text/javascript">
+        var container=document.getElementById("container");
+        var canvas=document.getElementById("canvas");
+        var cxt=canvas.getContext("2d");
+        var SW=canvas.width=2*window.innerWidth;
+        var SH=canvas.height=2*window.innerHeight;
+        var frequecelist=new Array();
+        var sinxlist=new Array();
+        var sinylist=new Array();
+        cxt.lineWidth=1;
+        cxt.moveTo(0, SH/2);
+        cxt.lineTo(SW,SH/2);
+        cxt.moveTo(SW/2, SH);
+        cxt.lineTo(SW/2,0);
+        cxt.stroke();
+        function drawSin(){
+           clear();
+           var canvas=document.getElementById("canvas");
+           var cxt=canvas.getContext("2d");
+           cxt.lineWidth=1;
+           cxt.clearRect(0,0,SW,SH);
+           cxt.moveTo(0,SH/2);
+           cxt.lineTo(SW,SH/2);
+           cxt.moveTo(SW/2,SH);
+           cxt.lineTo(SW/2,0);
+           cxt.stroke();
+           cxt.strokeStyle="#ff0000";
+           try{
+                var numb=window.mydata.getsize()-1;
+                for(i=0;i<numb;i++){
+                    cxt.moveTo(10*i,SH/2-window.mydata.getsin(i));
+                    cxt.lineTo(10*(i+1),SH/2-window.mydata.getsin(i+1));
+                }
+                cxt.stroke();
+           }catch(err){
+            alert(err);
+           }
+           alert("信号采集完毕");
+        }
+        function clear(){
+            var canvas=document.getElementById("canvas");
+            container.removeChild(canvas);
+            var newcanvas=document.createElement("canvas");
+            newcanvas.id="canvas";
+            newcanvas.width=SW;
+            newcanvas.height=SH;
+            container.appendChild(newcanvas);
+        }
+    </script>
+</body>
+</html>

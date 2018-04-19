@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:gravity="center"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/shyyanorder"
+            android:paddingLeft="10dp"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:text="实验三"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/shyyants"
+            android:textColor="#FF0B0E"
+            android:background="#ffffff"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="提示"
+            android:padding="2dp"
+            android:maxLines="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/shyyanset"
+            android:paddingRight="10dp"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:text="设置"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/upload"
+            android:paddingRight="10dp"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:text="上传"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/timeareas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <com.qqjyb.szxhcl.DrawView
+            android:id="@+id/drawview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:visibility="visible" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3B99FF">
+
+            <Button
+                android:background="#00000000"
+                android:textColor="#ffffff"
+                android:id="@+id/ksly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="录音" />
+
+            <Button
+                android:background="#00000000"
+                android:textColor="#ffffff"
+                android:id="@+id/tzly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="停录" />
+            <Button
+                android:background="#00000000"
+                android:textColor="#ffffff"
+                android:id="@+id/srctimeresult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="信号序列" />
+
+            <Button
+                android:background="#00000000"
+                android:textColor="#ffffff"
+                android:id="@+id/bfly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="播放" />
+
+            <Button
+                android:background="#00000000"
+                android:textColor="#ffffff"
+                android:id="@+id/tzbf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="停播" />
+
+            <Button
+                android:background="#00000000"
+                android:textColor="#ffffff"
+                android:id="@+id/plarea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="频域" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/plareas"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <com.qqjyb.szxhcl.ShowScreens
+            android:visibility="visible"
+            android:id="@+id/plshow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3B99FF">
+            <Button
+                android:background="#00000000"
+                android:textColor="#ffffff"
+                android:layout_weight="1"
+                android:id="@+id/fxnumb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:text="设置" />
+            <Button
+                android:background="#00000000"
+                android:textColor="#ffffff"
+                android:id="@+id/pllist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="结果" />
+
+            <Button
+                android:background="#00000000"
+                android:textColor="#ffffff"
+                android:id="@+id/plfx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="分析" />
+            <Button
+                android:background="#00000000"
+                android:textColor="#ffffff"
+                android:id="@+id/timearea"
+                android:layout_weight="1"
+                android:text="时域"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

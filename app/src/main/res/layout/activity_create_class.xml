@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.qqjyb.user.CreateClass">
+    <com.beardedhen.androidbootstrap.BootstrapProgressBar
+        android:id="@+id/progress"
+        app:animated="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bootstrapBrand="primary"
+        app:striped="true"
+        app:bootstrapSize="lg"
+        app:roundedCorners="true"
+        app:bootstrapProgress="100"/>
+    <TextView
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#FF4CA5B7"
+        android:text="班级名称"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:gravity="center"
+        android:textColor="#FF4C6EB7"
+        android:id="@+id/classname"
+        android:hint="班级名称"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#FF4CA5B7"
+        android:text="班级号码"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:gravity="center"
+        android:id="@+id/classId"
+        android:textColor="#FF4C6EB7"
+        android:hint="班级号码"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/create"
+        android:layout_margin="10dp"
+        android:text="确认创建"
+        app:bootstrapBrand="primary"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/cancel"
+        android:layout_margin="10dp"
+        android:text="取消创建"
+        app:bootstrapBrand="info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
